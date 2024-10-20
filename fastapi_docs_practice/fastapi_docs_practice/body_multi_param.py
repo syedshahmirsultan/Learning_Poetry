@@ -30,7 +30,7 @@ def update_Item(item:Item,user:User,client:Annotated[str,Body(embed=True)]):
 
 
 @app.post("/testing")
-def update_Item1(item:Annotated[Item,Body(embed=True)]):
+def update_Item1(item:Annotated[Item,Body()]):
     return {"client":item}
 
 
